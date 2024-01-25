@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="home-section" class="pb-5">
+      <nav class="navbar navbar-expand-sm navbar-light py-4 mb-0">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex justify-content-start"
+            href="index.html"
+          >
+            <img src="./imgs/logo@2x.png" width="76px" alt="Logo" />
+
+            <div class="logo-info d-inline-block ms-2">
+              <h1>Weather</h1>
+              <small>tagline goes here</small>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav m-auto mt-2 mt-lg-0 ps-5">
+              <li class="nav-item">
+                <a class="nav-link active mx-3" href="#" aria-current="page"
+                  >Home <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="first-section">
+        <div class="container pt-5 position-relative">
+          <input
+          onkeyup="getForecast(value)"
+            type="text"
+            name="search"
+            id="search-input"
+            placeholder="Find Your Location..."
+            class="form-control"
+          />
+          <button id="find-btn" class="btn">Find</button>
+        </div>
+      </div>
+      <div id="forecast-info">
+        <div class="container">
+          <div class="row g-0 align-items-stretch">
+            <div class="col-md-4" >
+              <div id="today-forecast"></div>
+            </div>
+            <div class="col-md-4">
+              <div id="next-day-forecast"></div>
+              
+            </div>
+            <div class="col-md-4">
+              <div id="third-day-forecast">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    
+    </div>
+    <div id="footer">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="sub position-relative">
+
+<input
+         
+            type="text"
+            name="subscribe"
+            id="subscribe"
+            placeholder="Enter Your Email To Subscribe..."
+            class="form-control"
+          />
+          <button id="subscribe-btn" class="btn">Subscribe</button>
+
+            </div>
+          
+           
+          </div>
+          <div class="col-md-3">
+            <div class="social-media d-flex justify-content-end">
+              <ul class="list-unstyled">
+                <li class="px-2"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="px-2"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="px-2"><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li class="px-2"><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p id="Copyright">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+
+      
+    </div>
+    <script src="js/test.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
